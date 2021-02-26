@@ -1,10 +1,16 @@
 import React from 'react'
 import "./Chat.css"
+import { Avatar, IconButton } from "@material-ui/core"
 
 function Chat() {
     return (
         <div className="chat">
-            <h1>Chat</h1>
+            <div className="chat__header">
+                <Avatar/>
+                <div className="chat__headerInfo">
+                    <h3>Room name</h3>
+                </div>
+            </div>
         </div>
     )
 }
